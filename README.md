@@ -4,3 +4,16 @@ Food Waste Management System is designed to reduce the wastage of food in family
 **SRS document**contains detailed description about the project and functions used in this system
 
 **SDD document**contains System Architectural diagrams,Data flow diagrams and Human interface designs
+
+**Languages used:**
+          **Front end - **HTML,CSS
+          **Back end - **Mysql,Javascript
+
+**Tools used:**
+          1.  Visual studio 
+          2.  My SQL Workbench
+          3.  Sublime text editor
+          4.  Nodejs 
+          5.  Express framework
+          6.  Notepad ++ 
+
