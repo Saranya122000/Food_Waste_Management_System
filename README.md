@@ -5,7 +5,7 @@ Food Waste Management System is designed to reduce the wastage of food in family
 
 **SDD document**contains System Architectural diagrams,Data flow diagrams and Human interface designs
 
-**Languages used:**
+**Languages used-**
          **Front end:** HTML,CSS
          **Back end:** Mysql,Javascript
 
