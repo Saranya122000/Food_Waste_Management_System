@@ -9,7 +9,9 @@ Food Waste Management System is designed to reduce the wastage of food in family
 
 **Back end** folder consists of Javascript files
 
-**Modules** folder consists of node.js packages
+**Modules and node_modules** folder consists of node.js packages
+
+**Demo_video**uploaded contains the demo of the project 
 
 **Languages used-**
          **Front end:** HTML,CSS
