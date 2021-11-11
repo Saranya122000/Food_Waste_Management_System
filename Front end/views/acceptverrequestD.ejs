@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VERIFICATION REQUEST BY <%=d_data[0].d_username%></title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+
+/*.title {
+  font: Helvetica;
+  background-color: black;
+  text_align: center;
+  color: black;
+  display: block;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+{box-sizing: border-box}
+
+/* Add padding to containers */
+
+form {
+  margin: 12% auto;
+  width: 45em;
+  text-align: center;
+  position: relative;
+  -webkit-animation: moveDown .3s;
+  -moz-animation: moveDown .3s;
+  animation: moveDown .3s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+// animates to come down
+@-webkit-keyframes moveDown {
+  0%   {-webkit-transform: translate(0,-10%);opacity: 0;}
+  100% {-webkit-transform: translate(0,0);opacity: 1;}
+}
+
+@-moz-keyframes moveDown {
+  0%   {-moz-transform: translate(0,-10%);opacity: 0;}
+  100% {-moz-transform: translate(0,0);opacity: 1;}
+}
+
+@keyframes moveDown {
+  0%   {transform: translate(0,-10%);opacity: 0;}
+  100% {transform: translate(0,0);opacity: 1;}
+}
+
+.container {
+  padding: 16px;
+  
+  text_align:center;
+  position: absolute;
+  center: 0;
+  margin: 0px;
+  max-width: 100%;
+  padding: 16px;
+  vertical-align: center;
+  background-color: white;
+  width:100%;
+  height: 800px;
+
+
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-family: $font-family;
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    transition: 0.3s;
+    
+    &:focus {
+        background: darken(#fff, 3%);
+    }
+}
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+    background-size: 200% 100% !important;
+    animation: move 10s ease infinite;
+    transform: translate3d(0, 0, 0);
+    background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);
+    height: 100vh
+}
+
+.button1 {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 12px;
+}
+
+/* Darker background on mouse-over */
+.button1:hover {
+  background-color: RoyalBlue;
+}
+
+.button2 {
+    display: inline;
+    width: 40%;
+    padding: 20px;
+    font-family: $font-family;
+    -webkit-appearance: none;
+    outline: 0;
+    border: 0;
+    color: white;
+    background: #04AA6D;
+    transition: 0.3s;
+	border-radius: 6px;
+	
+    
+    &:hover {
+        background: darken($#04AA6D, 5%);
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		color: white;
+    }
+}
+
+/* Full-width input fields */
+
+.div1{
+
+display:inline;
+text-align: center;
+
+}
+input[type=text]{
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus :focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+.head1
+{
+  margin: 10% auto;
+  text-align: center;
+  position: relative;
+  left: 10px;
+  color: white;
+
+}
+
+</style>
+<body>
+
+ <h1 class="head1">VERIFICATION REQUEST BY <%=d_data[0].d_username%></h1>
+<form action="/" enctype='multipart/form-data' class="form" method="get">
+  <div >
+   
+    <h1>Accept/Decline verification request</h1><br><br>
+    <hr>
+
+    <label for="dname"><b>Donor name</b></label>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" value="<%=d_data[0].d_name%>" name="dname" id="dname" class="td"  required><br>
+
+    <label for="dtype"><b>Donor type</b></label>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" value="<%=req_data[0].d_type%>" name="dtype" id="dtype" class="td" required><br>
+
+    <label for="dphone"><b>Donor phone no</b></label>
+	&nbsp;&nbsp;
+    <input type="text" value="<%=d_data[0].d_phone%>" name="dphone" id="dphone" class="td" required><br>
+	
+	<label for="demail"><b>Donor email-id</b></label>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" value="<%=d_data[0].d_email%>" name="demail" id="demail" class="td" required><br>
+	
+	<label for="daddr"><b>Donor address</b></label>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" value="<%=d_data[0].d_addr%>" name="daddr" id="daddr" class="td" required><br><br>
+	&nbsp;&nbsp;
+	
+	<input type="hidden" value="<%=req_data[0].req_id%>" name="reqid" id="reqid" class="td" required>
+	<input type="hidden" value="<%=d_data[0].d_username%>" name="duname" id="duname" class="td" required>
+	
+	<button type="submit" class="button1" formaction="/aadhard/<%=req_data[0].req_id%>" name="choice" value="aadhar"  ><i class="fa fa-download"></i> Download Aadhar-id of Donor</button>
+	&nbsp;&nbsp;
+	<button type="submit" class="button1" formaction="/supdocd/<%=req_data[0].req_id%>" name="choice" value="supdoc"  ><i class="fa fa-download"></i> Download supporting document of Donor</button><br><br><br>
+	&nbsp;
+	<button type="submit" class="button2" formaction="/acceptd" name="choice" value="accept"  >Accept</button>
+	&nbsp;&nbsp;
+	<button type="submit" class="button2" formaction="/acceptd" name="choice" value="decline"  >Decline</button>
+	
+    <hr>
+
+    
+	
+  </div>
+</form>
+
+</body>

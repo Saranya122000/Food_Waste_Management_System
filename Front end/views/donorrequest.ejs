@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("https://insights.nordea.com/wp-content/uploads/2019/09/GettyImages-1127769156-1600x1068.jpg");
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 0px;
+  max-width: 500px;
+  padding: 16px;
+  vertical-align: center;
+  background-color: white;
+  width:400px;
+  height: 800px;
+
+
+}
+
+.button {
+  background-color:#00cccc;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 16px;
+  background-color: white;
+  color: black;
+  width:190;
+  border: 2px solid #00cccc;
+
+}
+.button2:hover {
+  background-color:#00cccc;
+  color: white;
+}
+
+/* Set a style for the submit button */
+
+
+</style>
+</head>
+<body>
+
+<h2>Form on Hero Image</h2>
+<div class="bg-img">
+
+  <form class="container" method="POST">
+    
+    <br><br><br>
+    <h1>Donor food take-up request</h1>
+
+<br>
+    <label for="served" style="font-size: 24">No of people to be served:</label>
+    <input type="number" id="noofppl" name="noofppl" placeholder="Enter number" style="width: 100%;height: 30;padding: 10px;margin: 5px 0 22px 0;border: none;background: #f1f1f1;"><br><br>
+
+    <label for="addr" style="font-size: 24">Food take up address:</label>
+    <input type="text" id="takeupaddr" name="takeupaddr" placeholder="Enter Address" style="width: 100%;height: 30;padding: 10px;margin: 5px 0 22px 0;border: none;background: #f1f1f1;"><br><br>
+
+    <label for="valid" style="font-size: 24">Food validity from time of request(in appr.hrs):</label>
+    <input type="number" id="validity" name="validity" placeholder="Enter in hrs" style="width: 100%;height: 30;padding: 10px;margin: 5px 0 22px 0;border: none;background: #f1f1f1;"><br><br>
+
+    <label for="items" style="font-size: 24">Items available:</label>
+    <input type="text" id="items" name="items" placeholder="Enter items" style="width: 100%;height: 30;padding: 10px;margin: 5px 0 22px 0;border: none;background: #f1f1f1;"><br><br>
+
+
+    <input type="submit" class="button button2" name="submit" value="Request">
+
+</form>
+</div>
+</body>
+</html>

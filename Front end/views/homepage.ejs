@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #000000;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+  text-align:center;
+  display: inline-block;
+}
+
+/*.navbar a:hover {
+  background-color: #00cccc;
+}
+
+.active {
+  background-color: #04AA6D;
+}*/
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: inline-block;
+  }
+}
+.logo-image{
+    width: auto;
+    height: auto;
+    margin-top: -2px;
+    margin-left: 6px;
+    vertical-align:middle;
+}
+.myDiv2 {
+  
+  width:190;
+  text-align: center;
+  margin:auto;
+}
+
+.foot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #00cccc;
+  color: white;
+  text-align: center;
+  height: 60px;
+}
+
+.fa fa-fw fa-envelope{
+size: fa-4x;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  //padding: 10px;
+  height:100%;
+ /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.round3 {
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 5px;
+}
+</style>
+<body>
+
+
+
+<div class="navbar">
+  <a class="logo-image" href="/">
+     
+      <img src="https://www.pngitem.com/pimgs/m/237-2378951_food-donation-food-donation-icon-png-transparent-png.png" class="img-fluid" width="40" height="30">
+      
+  </a>
+  
+  <a href="/register" style="float:right"><i class="fa fa-fw fa-user"></i> Register</a>
+  <a href="/Login" style="float:right"><i class="fa fa-fw fa-user"></i> Login</a>
+  <a href="/" style="float:right"><i class="fa fa-fw fa-home" ></i> Home</a> 
+  <!-- <font face="Arial" size="10px" color="#00cccc">FOOD QUEST</font> -->
+</div>
+<div class="row">
+  <div class="column" text-align="center">
+    <br>
+    <br>
+    <br>
+    <p><font face="Times New Roman" size="10" color="#00cccc" >Welcome to TREAT THE NEEDY</font></p>
+    <p><font face="Arial" size="6" color="DarkSalmon" >Together we can solve hunger</font></p><br><br>
+	<h1><font face="Trebuchet MS" size="5" color="DarkSeaGreen" >WHO ARE WE ?</font><h1>
+	<p><font face="Verdana" size="4" color="#808080" >We as a student crew of 6 are making consistent efforts in ways we can contribute to attain the sustainable goal of fighting food hunger.Come join us and treat the needy!!</font></p>
+    <h1><font face="Trebuchet MS" size="5" color="DarkSeaGreen" >WHAT WE ARE TRYING TO DO ?</font><h1>
+	<p><font face="Verdana" size="4" color="#808080" >Treat the needy is a non-profit food waste management web app that connects people who wants to donate their surplus food to people in need.Those who wish to donate food can register as a food donor and post food take up requests to people who have registered themselves as food receivers.</font></p>
+	<p><font face="Brush Script MT" size="6" color="Violet">"If you can't feed a hundred people,then just feed one" - Mother Teresa. </font></p>
+  </div>
+  <div class="column" >
+    <div style="padding:30px 25px;margin-top:30px;height:1500px">
+      <img src="https://us.123rf.com/450wm/artinspiring/artinspiring2001/artinspiring200100108/137000822-charity-concept-people-donate-food-to-help-poor-people-.jpg?ver=6" height="500" width="600">
+    <div>   
+      <br>
+    <div   style="padding:50px 80px ;border">
+    <div style="padding:30px ;border:1px solid black; height: 90px;width: 65%;background-color: powderblue"><font face="Times New Roman" size="5" >Achiever of the day is '<%=userData%>'</font>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+<footer class="foot">
+<style>
+        #GFG_DOWN {
+            margin-top: 370px;
+        }
+    </style>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+<p><span class="fa fa-fw fa-envelope"></span><span><font face="Trebuchet MS" size="4">    treattheneedy123@gmail.com</span></p>
+</footer>
+</body>
+</html> 

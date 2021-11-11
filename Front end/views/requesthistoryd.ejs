@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head></head><br><br>
+<style>
+.a{
+  float:left;
+  width:25%;
+  border-bottom: 1px solid black;
+}
+
+.div1
+{
+ background-color:white ;
+  text-align:left;
+  width: 100%;
+}
+
+.div1{
+
+
+  margin: 5px;
+  text_align: center;
+  color: white;
+  font-size: 20px;
+
+  background-color:hsl(80, 70%, 70%);
+  background-image:url("https://thumbs.dreamstime.com/z/cooking-herbs-spices-background-salt-olive-oil-white-copy-space-top-view-126244327.jpg");
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+
+
+.h1
+{
+    color: white;
+}
+
+a:link{
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: Black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+</style>
+<body>
+<br>
+<div class="div1">
+  <h1 style="text-indent: 500px;color: black;" >Donor Request History</h1>
+   <ul style="list-style-type:none;" >
+
+     <style>
+     table {
+       border-collapse: collapse;
+       width: 90%;
+     }
+
+     th, td {
+       text-align: left;
+       padding: 8px;
+     }
+
+     tr:nth-child(even) {background-color: #f2f2f2;}
+
+     </style>
+     <div style="overflow-x: auto;">
+     <table border="1">
+         <tr>
+           <th bgcolor="DarkOrange "</th>
+           <font color = "black" >Request id> <br> </font>
+
+           <th bgcolor="DarkOrange "</th>
+           <font color = "black" >No.of people served> <br> </font>
+
+           <th bgcolor="DarkOrange "</th>
+           <font color = "black" >Items> <br> </font>
+
+           <th bgcolor="DarkOrange "</th>
+           <font color = "black" >Time> <br> </font>
+
+
+
+
+
+       <%
+       if(userData.length!=0){
+       var i=1;
+       userData.forEach(function(data){
+       %>
+       <tr>
+          <td bgcolor= "NavajoWhite " </td>
+          <font color = "black" ><%=data.req_id %> <br> </font>
+
+          <td bgcolor= "NavajoWhite " </td>
+          <font color = "black" ><%=data.no_of_people_served %> <br> </font>
+
+          <td bgcolor= "NavajoWhite " </td>
+          <font color = "black" ><%=data.items %> <br> </font>
+
+          <td bgcolor= "NavajoWhite   " </td>
+          <font color = "black" ><%=data.r_time %> <br> </font>
+
+
+       </tr>
+       <%  i++; }) %>
+       <% } else{ %>
+           <tr>
+             <td bgcolor= "NavajoWhite " </td>
+             <font color = "black" >No Data Found ><br> </font>
+             <td bgcolor= "NavajoWhite " </td>
+             <font color = "black" >No Data Found ><br> </font>
+             <td bgcolor= "NavajoWhite " </td>
+             <font color = "black" >No Data Found ><br> </font>
+             <td bgcolor= "NavajoWhite " </td>
+             <font color = "black" >No Data Found ><br> </font>
+
+
+             </tr>
+         <% } %>
+     </table>
+
+
+
+ </div>

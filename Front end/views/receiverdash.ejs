@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html, body{overflow:hidden;}
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 28%;
+  background-color: #000;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+/*li a.active {
+  background-color: #04AA6D;
+  color: white;
+}*/
+
+li a:hover:not(.active) {
+  background-color: #00cccc;
+  color: black;
+}
+.ima{
+
+padding:250px 250px;
+height:1500px;
+position:relative;
+top:-150px;
+
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <br>
+  <li><font face="Arial" size="10" color="#00cccc">&nbsp;Treat the needy</font></li>
+  <br>
+  <li><font face="Arial" size="6" color="DarkSalmon">&nbsp; Welcome <%=r_uname%> !!</font></li>
+  <li><font face="Arial" size="3" color="SeaGreen">&nbsp;&nbsp;&nbsp;&nbsp;  Account Status : <%=ver_status%> </font></li>
+  <br>
+  <li><a href="/acceptrequest">Accept Request</a></li>
+  <li><a href="/editdetailsreceiver/<%=r_uname%>">Edit profile</a></li>
+  <li><a href="/receiververification">Verification request</a></li>
+  <li><a href="/requesthistoryr">Accept history</a></li>
+  <li><a href="/">Logout</a></li>
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <div class="ima">
+      <img src="https://img.freepik.com/free-vector/young-volunteer-with-food-donation-boxes-concept-illustrations-food-donation-concept-with-character-can-use-web-banner-infographics-hero-images_106796-258.jpg?size=626&ext=jpg" height="500" width="600">
+    <div>   
+</div>
+
+</body>
+</html>
+
+

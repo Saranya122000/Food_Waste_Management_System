@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head></head><br><br>
+<style>
+.a{
+  float:left;
+  width:25%;
+  border-bottom: 1px solid black;
+}
+
+.div1 {
+  
+  background-color:White ;
+  text-align:left;
+  width: 100%;
+}
+
+.div1{
+
+  background:  #cce5ff;
+  margin: 5px;
+  text_align: center;
+  color: white;
+  font-size: 20px;
+  /* The image used */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVIQrMSnxIo-FL9irDRPefnDbmUwUh5B8weQ&usqp=CAU");
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+  
+
+ul {
+  background: white;
+  padding: 20px;
+  opacity: 0.8;
+  border-radius: 15px 50px 30px;
+  width: 40%;
+  text-align: left;
+  position: relative;
+  left: 20px;
+  border: 5px solid #00FFFF;
+  list-style-image: url("../../media/examples/rocket.svg");
+}
+
+ul li {
+  background: white;
+  margin: 5px;
+  font-size: 25px;
+  
+  
+  
+}
+
+.hr{
+
+}
+.body{
+
+background-image: url('example_img_girl.jpg');
+}
+
+.h1
+{
+    color: coral;
+}
+
+a:link {
+  color: coral;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: violet;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: coral;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: coral;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+</style>
+<body>
+<br>
+<div class="div1">
+   <h1 style="color: violet;">VERIFICATION REQUESTS SENT BY DONORS</h1>
+   <ul style="list-style-type:none;" >
+   <%
+            if(userData.length!=0){
+            var i=1;
+            userData.forEach(function(data){
+   %>
+   <div class="mydiv"><br>
+   <li><a href="/acceptVerrequest/<%=data.d_username%>/<%=data.req_id%>" style="text-decoration:none" >Request by <%=data.d_username%></a></li><br><hr style="border: 2px solid #00FFFF;
+  border-radius: 5px;"></div>
+   
+   <%  i++; }) %>
+   <% } %>
+ 
+ </div>
+ 
