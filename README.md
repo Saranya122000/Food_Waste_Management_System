@@ -9,11 +9,6 @@ Food Waste Management System is designed to reduce the wastage of food in family
          **Front end:** HTML,CSS
          **Back end:** Mysql,Javascript
 
-**Tools used:**
-          1.  Visual studio 
-          2.  My SQL Workbench
-          3.  Sublime text editor
-          4.  Nodejs 
-          5.  Express framework
-          6.  Notepad ++ 
+**Tools used:** Visual studio,My SQL Workbench,Sublime text editor,Nodejs,Express framework,Notepad++ 
+        
 
