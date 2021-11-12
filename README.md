@@ -23,6 +23,8 @@ Food Waste Management System is designed to reduce the wastage of food in family
 
 **incorrectpwd.ejs**: Prompts the user that password is incorrect during the log in.
 
+**admnidash.ejs:** Shows the features available for the admin.
+
 **donordash.ejs :** displays the donor dashboard where the donor can make use of the features available to them
 
 **receiverdash.ejs :** displays the receiver dashboard where the receiver can make use of the features available to them
