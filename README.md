@@ -13,27 +13,39 @@ Food Waste Management System is designed to reduce the wastage of food in family
 
 **Front end/Views:**
 
-**login.ejs:** This page is used to login into the system (Donor, Reciever, Admin can login into the system using this page)
-
-**Donorrequesthistory.ejs:** All the food takeup request posted by donor is displayed in this page
-
-**acceptverrequestD.ejs:** Accept/Decline donor verification request page for admin to see all donor details,to download the scanned copy of the aadhar id and supporting document and to accept/decline the request.
-
-**acceptverrequestR.ejs:** Accept/Decline receiver verification request page for admin to see all receiver details,to download the scanned copy of the aadhar id and supporting document and to accept/decline the request.
-
 **homepage.ejs:** Homepage of the website displaying a brief introduction about the website.Also shows the "Achiever of the day" and has options to login and register.
 
-**viewVerReqD.ejs:** Shows all the verification requests sent by donor to admin.
+**login.ejs :** displays the login page for donor, receiver and admin
 
-**viewVerReqR.ejs:** Shows all the verification requests sent by receiver to admin.
+**register.ejs :** displays the. registration page of donor, receiver and admin where they can get registered account
 
 **incorrectpwd.ejs**: Prompts the user that password is incorrect during the log in.
 
 **exists.ejs:** Prompts the user that the user name or email id given already exists during the registeration
 
+**donordash.ejs :** displays the donor dashboard where the donor can make use of the features available to them
+
+**receiverdash.ejs :** displays the receiver dashboard where the receiver can make use of the features available to them
+
+**donorrequest.ejs :** displays the page where the donor can post a food take-up request by specifying the quantity, validity of food(in hours), food take-up address and items.
+
+**acceptrequest.ejs :** displays the requests posted by donors along with the donor verification status and distance between donor and receiver. It filters the requests that are within 8km from the receiver.
+
+**Donorrequesthistory.ejs:** All the food takeup request posted by donor is displayed in this page
+
+**requesthistoryr.ejs :** displays the accept history of receivers
+
 **receiververification.ejs:** receiver can send a request to get a verified profile. receiver should also enter required details and upload 2 documents such as aadhar, supporting document. And the files should be of pdf format only. Then the file will be changed to a specific format, username followed by document name.
 
 **donorverification.ejs:** donor can send a request to get a verified profile. donor should also enter required details and upload 2 documents such as aadhar, supporting document. And the files should be of pdf format only. Then the file will be changed to a specific format, username followed by document name.
+
+**viewVerReqD.ejs:** Shows all the verification requests sent by donor to admin.
+
+**viewVerReqR.ejs:** Shows all the verification requests sent by receiver to admin.
+
+**acceptverrequestD.ejs:** Accept/Decline donor verification request page for admin to see all donor details,to download the scanned copy of the aadhar id and supporting document and to accept/decline the request.
+
+**acceptverrequestR.ejs:** Accept/Decline receiver verification request page for admin to see all receiver details,to download the scanned copy of the aadhar id and supporting document and to accept/decline the request.
 
 **app.js :** Contains the backend code for the entire application
 
