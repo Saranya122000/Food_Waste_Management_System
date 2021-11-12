@@ -35,7 +35,7 @@ Food Waste Management System is designed to reduce the wastage of food in family
 
 **donorverification.ejs:** donor can send a request to get a verified profile. donor should also enter required details and upload 2 documents such as aadhar, supporting document. And the files should be of pdf format only. Then the file will be changed to a specific format, username followed by document name.
 
-
+**app.js :** Contains the backend code for the entire application
 
 **Demo_video** uploaded contains the demo of the project 
 
