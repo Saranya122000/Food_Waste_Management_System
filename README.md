@@ -5,6 +5,9 @@ Food Waste Management System is designed to reduce the wastage of food in family
 
 **SDD document**contains System Architectural diagrams,Data flow diagrams and Human interface designs
 
+**Demo_video link**
+https://drive.google.com/file/d/1oEHnqSD3Ma36Ayb4Vkb2fVgutMV6Ja5g/view?usp=sharing
+
 **Front end** folder consists of EJS files
 
 **Back end** folder consists of Javascript files
@@ -54,8 +57,6 @@ Food Waste Management System is designed to reduce the wastage of food in family
 **acceptverrequestR.ejs:** Accept/Decline receiver verification request page for admin to see all receiver details,to download the scanned copy of the aadhar id and supporting document and to accept/decline the request.
 
 **app.js :** Contains the backend code for the entire application
-
-**Demo_video** uploaded contains the demo of the project 
 
 **Languages used-**
          **Front end:** HTML,CSS
