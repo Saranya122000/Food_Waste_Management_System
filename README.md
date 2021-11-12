@@ -13,8 +13,15 @@ Food Waste Management System is designed to reduce the wastage of food in family
 
 **Front end/Views:**
 
-**donor/reciever/admin login:** This page is used to login into the system (Donor, Reciever, Admin can login into the system using this page)
-**requesthistory (Donor):** All the food takeup request posted by donor is displayed in this page
+**login.ejs:** This page is used to login into the system (Donor, Reciever, Admin can login into the system using this page)
+
+**Donorrequesthistory.ejs:** All the food takeup request posted by donor is displayed in this page
+
+**acceptverrequestD.ejs:** Accept/Decline donor verification request page for admin to see all donor details,to download the scanned copy of the aadhar id and supporting document and to accept/decline the request.
+
+**acceptverrequestR.ejs:** Accept/Decline receiver verification request page for admin to see all receiver details,to download the scanned copy of the aadhar id and supporting document and to accept/decline the request.
+
+**homepage.ejs:** Homepage of the website displaying a brief introduction about the website.Also shows the "Achiever of the day" and has options to login and register.
 
 
 **Demo_video** uploaded contains the demo of the project 
