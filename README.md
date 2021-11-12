@@ -12,6 +12,8 @@ Food Waste Management System is designed to reduce the wastage of food in family
 **Modules and node_modules** folder consists of node.js packages
 
 **Front end/Views:**
+donor/reciever/admin login  : This page is used to login into the system (Donor, Reciever, Admin can login into the system using this page)
+requesthistory (Donor)      : All the food takeup request posted by donor is displayed in this page
 
 
 
