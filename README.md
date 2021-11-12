@@ -23,6 +23,19 @@ Food Waste Management System is designed to reduce the wastage of food in family
 
 **homepage.ejs:** Homepage of the website displaying a brief introduction about the website.Also shows the "Achiever of the day" and has options to login and register.
 
+**viewVerReqD.ejs:** Shows all the verification requests sent by donor to admin.
+
+**viewVerReqR.ejs:** Shows all the verification requests sent by receiver to admin.
+
+**incorrectpwd.ejs**: Prompts the user that password is incorrect during the log in.
+
+**exists.ejs:** Prompts the user that the user name or email id given already exists during the registeration
+
+**receiververification.ejs:** receiver can send a request to get a verified profile. receiver should also enter required details and upload 2 documents such as aadhar, supporting document. And the files should be of pdf format only. Then the file will be changed to a specific format, username followed by document name.
+
+**donorverification.ejs:** donor can send a request to get a verified profile. donor should also enter required details and upload 2 documents such as aadhar, supporting document. And the files should be of pdf format only. Then the file will be changed to a specific format, username followed by document name.
+
+
 
 **Demo_video** uploaded contains the demo of the project 
 
