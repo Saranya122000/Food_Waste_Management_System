@@ -15,17 +15,21 @@ Food Waste Management System is designed to reduce the wastage of food in family
 
 **homepage.ejs:** Homepage of the website displaying a brief introduction about the website.Also shows the "Achiever of the day" and has options to login and register.
 
-**login.ejs :** displays the login page for donor, receiver and admin
-
 **register.ejs :** displays the. registration page of donor, receiver and admin where they can get registered account
 
-**incorrectpwd.ejs**: Prompts the user that password is incorrect during the log in.
-
 **exists.ejs:** Prompts the user that the user name or email id given already exists during the registeration
+
+**login.ejs :** displays the login page for donor, receiver and admin
+
+**incorrectpwd.ejs**: Prompts the user that password is incorrect during the log in.
 
 **donordash.ejs :** displays the donor dashboard where the donor can make use of the features available to them
 
 **receiverdash.ejs :** displays the receiver dashboard where the receiver can make use of the features available to them
+
+**editdetailsdonor.ejs:** Shows the donor the current profile details and enables them to edit it.
+
+**editdetailsreceiver.ejs:** Shows the receiver the current profile details and enables them to edit it.
 
 **donorrequest.ejs :** displays the page where the donor can post a food take-up request by specifying the quantity, validity of food(in hours), food take-up address and items.
 
@@ -56,5 +60,3 @@ Food Waste Management System is designed to reduce the wastage of food in family
          **Back end:** Mysql,Javascript
 
 **Software Tools used:** Visual studio,My SQL Workbench,Sublime text editor,Nodejs,Express framework,Notepad++ 
-        
-
